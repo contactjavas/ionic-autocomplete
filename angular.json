@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ionic4-auto-complete": {
+    "ionic-autocomplete": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ionic4-auto-complete:build"
+            "browserTarget": "ionic-autocomplete:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ionic4-auto-complete:build:production"
+              "browserTarget": "ionic-autocomplete:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ionic4-auto-complete:build"
+            "browserTarget": "ionic-autocomplete:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ionic4-auto-complete:serve"
+            "devServerTarget": "ionic-autocomplete:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ionic4-auto-complete:serve:production"
+              "devServerTarget": "ionic-autocomplete:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ionic4-auto-complete",
+  "defaultProject": "ionic-autocomplete",
   "cli": {
     "analytics": "2d3ed528-3679-45fc-8865-1d849b6ea6cf"
   }

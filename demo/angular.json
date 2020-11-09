@@ -38,7 +38,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/ionic4-auto-complete/assets/",
+                "input": "node_modules/ionic-autocomplete/assets/",
                 "output": "./assets/"
               },
               "src/manifest.json"

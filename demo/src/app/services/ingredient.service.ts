@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 
-import {AutoCompleteService} from 'ionic4-auto-complete';
+import {AutoCompleteService} from 'ionic-autocomplete';
 
 import {IngredientModel} from '../models/ingredient.model';
 

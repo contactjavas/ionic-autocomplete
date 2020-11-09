@@ -19,7 +19,7 @@
 ### Version Information
 
 ```
-ionic4-auto-complete: x.x.x
+ionic-autocomplete: x.x.x
 @angular/cli: x.x.x
 ```
 

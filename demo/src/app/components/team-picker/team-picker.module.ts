@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {IonicModule} from '@ionic/angular';
 
-import {AutoCompleteModule} from 'ionic4-auto-complete';
+import {AutoCompleteModule} from 'ionic-autocomplete';
 
 import {TeamPickerComponent} from './team-picker.component';
 

@@ -1,8 +1,8 @@
-# ionic4-auto-complete #
+# ionic-autocomplete #
 
-[![npm](https://img.shields.io/npm/l/ionic4-auto-complete.svg)](https://www.npmjs.com/package/ionic4-auto-complete/)
-[![npm](https://img.shields.io/npm/dt/ionic4-auto-complete.svg)](https://www.npmjs.com/package/ionic4-auto-complete)
-[![npm](https://img.shields.io/npm/dm/ionic4-auto-complete.svg)](https://www.npmjs.com/package/ionic4-auto-complete)
+[![npm](https://img.shields.io/npm/l/ionic-autocomplete.svg)](https://www.npmjs.com/package/ionic-autocomplete/)
+[![npm](https://img.shields.io/npm/dt/ionic-autocomplete.svg)](https://www.npmjs.com/package/ionic-autocomplete)
+[![npm](https://img.shields.io/npm/dm/ionic-autocomplete.svg)](https://www.npmjs.com/package/ionic-autocomplete)
 
 ![](example.gif)
 
@@ -20,7 +20,7 @@
 
 This is a component based on Ionic's search-bar component, with the addition of auto-complete ability. This component is super simple and light-weight. Just provide the data, and let the fun begin. This package is compatible with Angular 2+ and Ionic 2+. 
 
-* Try out [the demo](https://ionic4-auto-complete.jrquick.com) to see it in action!
+* Try out [the demo](https://ionic-autocomplete.jrquick.com) to see it in action!
 * Checkout [my other Ionic/Angular project](https://github.com/jrquick17/ionic4-tooltips) to add tooltips to your project!
 * Visit [my website](https://jrquick.com) for other cool projects!
 
@@ -30,17 +30,17 @@ This is a component based on Ionic's search-bar component, with the addition of 
 
 * For Angular 2-6: 
 ```
-npm install ionic4-auto-complete@^1.10.1 --save
+npm install ionic-autocomplete@^1.10.1 --save
 ```
 
 * For Angular 7-8: 
 ```
-npm install ionic4-auto-complete@~2.8.2 --save
+npm install ionic-autocomplete@~2.8.2 --save
 ```
 
 * For Angular 9+: 
 ```
-npm install ionic4-auto-complete --save
+npm install ionic-autocomplete --save
 ```
 
 ### Import assets ###
@@ -50,7 +50,7 @@ npm install ionic4-auto-complete --save
 ```
 {
   "glob": "**/*",
-  "input": "node_modules/ionic4-auto-complete/assets/",
+  "input": "node_modules/ionic-autocomplete/assets/",
   "output": "./assets/"
 }
 ```
@@ -60,7 +60,7 @@ npm install ionic4-auto-complete --save
 * Import `AutoCompleteModule` by adding the following to your parent module (i.e. `app.module.ts`):
 
     ```
-    import { AutoCompleteModule } from 'ionic4-auto-complete';
+    import { AutoCompleteModule } from 'ionic-autocomplete';
 
     @NgModule({
       ...
@@ -77,7 +77,7 @@ npm install ionic4-auto-complete --save
 
 * Import scss stylesheet from `node_modules` (i.e. `app.scss`, `global.scss`):
 
-    `@import "~ionic4-auto-complete/auto-complete";`
+    `@import "~ionic-autocomplete/auto-complete";`
 
 ### Create provider ###
 
@@ -138,7 +138,7 @@ npm install ionic4-auto-complete --save
     import {map} from 'rxjs/operators';
     import {Observable, of} from 'rxjs';
     
-    import {AutoCompleteService} from 'ionic4-auto-complete';
+    import {AutoCompleteService} from 'ionic-autocomplete';
     
     @Injectable()
     export class SimpleService implements AutoCompleteService {
@@ -188,7 +188,7 @@ npm install ionic4-auto-complete --save
     
     import {HttpClient} from '@angular/common/http';
     
-    import {AutoCompleteService} from 'ionic4-auto-complete';
+    import {AutoCompleteService} from 'ionic-autocomplete';
     
     @Injectable()
     export class CompleteTestService implements AutoCompleteService {
@@ -292,7 +292,7 @@ npm install ionic4-auto-complete --save
                 * Simply set `formValueAttribute` to empty string:
 
                     ```
-                    import {AutoCompleteService} from 'ionic4-auto-complete';
+                    import {AutoCompleteService} from 'ionic-autocomplete';
                     import {HttpClient} from '@angular/common/http';
                     import {Injectable} from "@angular/core";
                     import 'rxjs/add/operator/map'
@@ -328,7 +328,7 @@ npm install ionic4-auto-complete --save
 
 ### Searchbar Options ###
 
-* Ionic4-auto-complete supports the regular Ionic's Searchbar properties, which are set to their default values as specified in the [docs](https://ionicframework.com/docs/api/searchbar#properties).
+* ionic-autocomplete supports the regular Ionic's Searchbar properties, which are set to their default values as specified in the [docs](https://ionicframework.com/docs/api/searchbar#properties).
 
 * You can override these default values by adding the `[options]` attribute to the `<ion-auto-complete>` tag, for instance:
 
@@ -441,7 +441,7 @@ To contribute, clone the repo. Then, run `npm install` to get the packages neede
 
 ## Issues ##
 
-If you find any issues feel free to open a request in [the Issues tab](https://github.com/jrquick17/ionic4-auto-complete/issues). If I have the time I will try to solve any issues but cannot make any guarantees. Feel free to contribute yourself.
+If you find any issues feel free to open a request in [the Issues tab](https://github.com/jrquick17/ionic-autocomplete/issues). If I have the time I will try to solve any issues but cannot make any guarantees. Feel free to contribute yourself.
 
 ## Deploy ##
 
@@ -463,8 +463,8 @@ If you find any issues feel free to open a request in [the Issues tab](https://g
 
 #### Test ####
 
-* Copy `dist/` contents into `demo/node_modules/ionic4-auto-complete/`
-    * Run from root:  `cp -fr dist/* demo/node_modules/ionic4-auto-complete/`
+* Copy `dist/` contents into `demo/node_modules/ionic-autocomplete/`
+    * Run from root:  `cp -fr dist/* demo/node_modules/ionic-autocomplete/`
 * Run `ionic serve` from `demo/`
 * Run `ionic build --prod` from `demo/`
 
@@ -485,7 +485,7 @@ The auto-complete component allows you to use templates for customize the displa
 For example, we want to display the country name and the population:
     
     ```
-    import {AutoCompleteService} from 'ionic4-auto-complete';
+    import {AutoCompleteService} from 'ionic-autocomplete';
     import {HttpClient} from '@angular/common/http';
     import {Injectable} from "@angular/core";
     import 'rxjs/add/operator/map'

@@ -1,15 +1,15 @@
 {
-  "name": "ionic4-auto-complete",
-  "version": "2.9.2",
+  "name": "ionic-autocomplete",
+  "version": "0.1.0",
   "readme": "README.md",
-  "homepage": "https://ionic4-auto-complete.jrquick.com",
+  "homepage": "https://ionic-autocomplete.usefulteam.com",
   "scripts": {
     "build": "ng-packagr -p package.json && cp src/auto-complete/auto-complete.component.scss dist/auto-complete.scss && cp -r src/assets dist/assets",
     "demo": "cd demo && ionic serve",
     "demo:build": "cd demo && npm install && ionic build --prod && cd ..",
-    "demo:test": "npm run build && cd demo && cp -fr ../dist/* node_modules/ionic4-auto-complete/ && cd .. && npm run demo",
+    "demo:test": "npm run build && cd demo && cp -fr ../dist/* node_modules/ionic-autocomplete/ && cd .. && npm run demo",
     "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ionic4-auto-complete -d docs --hideGenerator",
+    "docs:build": "compodoc -p tsconfig.json -n ionic-autocomplete -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --project tsconfig.json src/**/*.ts",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jrquick17/ionic4-auto-complete"
+    "url": "https://github.com/contactjavas/ionic-autocomplete"
   },
   "author": {
     "name": "Jeremy Quick",
@@ -45,11 +45,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrquick17/ionic4-auto-complete/issues"
+    "url": "https://github.com/contactjavas/ionic-autocomplete/issues"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1000.8",
-    "@angular-devkit/build-angular": "^0.1000.8",
+    "@angular-devkit/build-angular": "^0.1002.0",
     "@angular-devkit/core": "^10.1.7",
     "@angular-devkit/schematics": "^10.1.7",
     "@angular/animations": "^10.1.6",
@@ -103,6 +103,6 @@
     "node": ">=6.0.0"
   },
   "peerDependencies": {
-    "@angular/core": "^8.0.0 || 9.0.0 || ^10.0.0"
+    "@angular/core": "~10.0.14"
   }
 }

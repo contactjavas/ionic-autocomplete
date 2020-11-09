@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ionic4-auto-complete</title>
+        <title>ionic-autocomplete</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">ionic4-auto-complete</a>
+            <a href="./" class="navbar-brand">ionic-autocomplete</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -30,10 +30,10 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="ionic4-auto-complete">ionic4-auto-complete</h1>
-<p><a href="https://www.npmjs.com/package/ionic4-auto-complete/"><img src="https://img.shields.io/npm/l/ionic4-auto-complete.svg" alt="npm" class="img-responsive"></a>
-<a href="https://www.npmjs.com/package/ionic4-auto-complete"><img src="https://img.shields.io/npm/dt/ionic4-auto-complete.svg" alt="npm" class="img-responsive"></a>
-<a href="https://www.npmjs.com/package/ionic4-auto-complete"><img src="https://img.shields.io/npm/dm/ionic4-auto-complete.svg" alt="npm" class="img-responsive"></a></p>
+<h1 id="ionic-autocomplete">ionic-autocomplete</h1>
+<p><a href="https://www.npmjs.com/package/ionic-autocomplete/"><img src="https://img.shields.io/npm/l/ionic-autocomplete.svg" alt="npm" class="img-responsive"></a>
+<a href="https://www.npmjs.com/package/ionic-autocomplete"><img src="https://img.shields.io/npm/dt/ionic-autocomplete.svg" alt="npm" class="img-responsive"></a>
+<a href="https://www.npmjs.com/package/ionic-autocomplete"><img src="https://img.shields.io/npm/dm/ionic-autocomplete.svg" alt="npm" class="img-responsive"></a></p>
 <p><img src="example.gif" alt="" class="img-responsive"></p>
 <h2 id="index">Index</h2>
 <ul>
@@ -48,7 +48,7 @@
 <h2 id="about">About</h2>
 <p>This is a component based on Ionic&#39;s search-bar component, with the addition of auto-complete ability. This component is super simple and light-weight. Just provide the data, and let the fun begin. This package is compatible with Angular 2+ and Ionic 2+. </p>
 <ul>
-<li>Try out <a href="https://ionic4-auto-complete.jrquick.com">the demo</a> to see it in action!</li>
+<li>Try out <a href="https://ionic-autocomplete.jrquick.com">the demo</a> to see it in action!</li>
 <li>Checkout <a href="https://github.com/jrquick17/ionic4-tooltips">my other Ionic/Angular project</a> to add tooltips to your project!</li>
 <li>Visit <a href="https://jrquick.com">my website</a> for other cool projects!</li>
 </ul>
@@ -56,9 +56,9 @@
 <h3 id="install-node">Install Node</h3>
 <ul>
 <li><p>For Angular 2-7: </p>
-<div><pre class="line-numbers"><code class="language-none">npm install ionic4-auto-complete&#64;1.10.2 --save</code></pre></div></li>
+<div><pre class="line-numbers"><code class="language-none">npm install ionic-autocomplete&#64;1.10.2 --save</code></pre></div></li>
 <li><p>For Angular 8+: </p>
-<div><pre class="line-numbers"><code class="language-none">npm install ionic4-auto-complete --save</code></pre></div></li>
+<div><pre class="line-numbers"><code class="language-none">npm install ionic-autocomplete --save</code></pre></div></li>
 </ul>
 <h3 id="import-assets">Import assets</h3>
 <ul>
@@ -66,12 +66,12 @@
 </ul>
 <div><pre class="line-numbers"><code class="language-none">{
   &quot;glob&quot;: &quot;**/*&quot;,
-  &quot;input&quot;: &quot;node_modules/ionic4-auto-complete/assets/&quot;,
+  &quot;input&quot;: &quot;node_modules/ionic-autocomplete/assets/&quot;,
   &quot;output&quot;: &quot;./assets/&quot;
 }</code></pre></div><h3 id="import-module">Import module</h3>
 <ul>
 <li><p>Import <code>AutoCompleteModule</code> by adding the following to your parent module (i.e. <code>app.module.ts</code>):</p>
-<div><pre class="line-numbers"><code class="language-none">  import { AutoCompleteModule } from &#39;ionic4-auto-complete&#39;;
+<div><pre class="line-numbers"><code class="language-none">  import { AutoCompleteModule } from &#39;ionic-autocomplete&#39;;
 
   &#64;NgModule({
     ...
@@ -86,7 +86,7 @@
 <h3 id="add-styles">Add styles</h3>
 <ul>
 <li><p>Import scss stylesheet from <code>node_modules</code> (i.e. <code>app.scss</code>, <code>global.scss</code>):</p>
-<p>  <code>@import &quot;~ionic4-auto-complete/auto-complete&quot;;</code></p>
+<p>  <code>@import &quot;~ionic-autocomplete/auto-complete&quot;;</code></p>
 </li>
 </ul>
 <h3 id="create-provider">Create provider</h3>
@@ -146,7 +146,7 @@ import {HttpClient} from &#39;&#64;angular/common/http&#39;;
 import {map} from &#39;rxjs/operators&#39;;
 import {Observable, of} from &#39;rxjs&#39;;
 
-import {AutoCompleteService} from &#39;ionic4-auto-complete&#39;;
+import {AutoCompleteService} from &#39;ionic-autocomplete&#39;;
 
 &#64;Injectable()
 export class SimpleService implements AutoCompleteService {
@@ -195,7 +195,7 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
 
   import {HttpClient} from &#39;&#64;angular/common/http&#39;;
 
-  import {AutoCompleteService} from &#39;ionic4-auto-complete&#39;;
+  import {AutoCompleteService} from &#39;ionic-autocomplete&#39;;
 
   &#64;Injectable()
   export class CompleteTestService implements AutoCompleteService {
@@ -293,7 +293,7 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
             * Simply set `formValueAttribute` to empty string:
 
                 ```
-                import {AutoCompleteService} from &#39;ionic4-auto-complete&#39;;
+                import {AutoCompleteService} from &#39;ionic-autocomplete&#39;;
                 import {HttpClient} from &#39;&#64;angular/common/http&#39;;
                 import {Injectable} from &quot;&#64;angular/core&quot;;
                 import &#39;rxjs/add/operator/map&#39;
@@ -326,7 +326,7 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
 </ul>
 <h3 id="searchbar-options">Searchbar Options</h3>
 <ul>
-<li><p>Ionic4-auto-complete supports the regular Ionic&#39;s Searchbar properties, which are set to their default values as specified in the <a href="https://ionicframework.com/docs/api/searchbar#properties">docs</a>.</p>
+<li><p>ionic-autocomplete supports the regular Ionic&#39;s Searchbar properties, which are set to their default values as specified in the <a href="https://ionicframework.com/docs/api/searchbar#properties">docs</a>.</p>
 </li>
 <li><p>You can override these default values by adding the <code>[options]</code> attribute to the <code>&lt;ion-auto-complete&gt;</code> tag, for instance:</p>
 <div><pre class="line-numbers"><code class="language-none">    &lt;ion-auto-complete [dataProvider]=&quot;someProvider&quot; [options]=&quot;{ placeholder : &#39;Lorem Ipsum&#39; }&quot;&gt;&lt;/ion-auto-complete&gt;</code></pre></div></li>
@@ -449,7 +449,7 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
 <li><a href="https://github.com/Birdstown">Birdstown</a></li>
 </ul>
 <h2 id="issues">Issues</h2>
-<p>If you find any issues feel free to open a request in <a href="https://github.com/jrquick17/ionic4-auto-complete/issues">the Issues tab</a>. If I have the time I will try to solve any issues but cannot make any guarantees. Feel free to contribute yourself.</p>
+<p>If you find any issues feel free to open a request in <a href="https://github.com/jrquick17/ionic-autocomplete/issues">the Issues tab</a>. If I have the time I will try to solve any issues but cannot make any guarantees. Feel free to contribute yourself.</p>
 <h2 id="deploy">Deploy</h2>
 <h3 id="demo">Demo</h3>
 <ul>
@@ -469,8 +469,8 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
 </ul>
 <h4 id="test">Test</h4>
 <ul>
-<li>Copy <code>dist/</code> contents into <code>demo/node_modules/ionic4-auto-complete/</code><ul>
-<li>Run from root:  <code>cp -fr dist/* demo/node_modules/ionic4-auto-complete/</code></li>
+<li>Copy <code>dist/</code> contents into <code>demo/node_modules/ionic-autocomplete/</code><ul>
+<li>Run from root:  <code>cp -fr dist/* demo/node_modules/ionic-autocomplete/</code></li>
 </ul>
 </li>
 <li>Run <code>ionic serve</code> from <code>demo/</code></li>
@@ -491,7 +491,7 @@ getResults(keyword:string):Observable&lt;any[]&gt; {
 <p>The auto-complete component allows you to use templates for customize the display of each suggestion. But in many cases, the default template is good. However, you need to concatenate several fields (like firstname and lastname) to produce a full label. In that case, you can declare a method named <code>getItemLabel</code> instead of using <code>labelAttribute</code>.</p>
 <p>For example, we want to display the country name and the population:</p>
 <div><pre class="line-numbers"><code class="language-none">```
-import {AutoCompleteService} from &#39;ionic4-auto-complete&#39;;
+import {AutoCompleteService} from &#39;ionic-autocomplete&#39;;
 import {HttpClient} from &#39;&#64;angular/common/http&#39;;
 import {Injectable} from &quot;&#64;angular/core&quot;;
 import &#39;rxjs/add/operator/map&#39;

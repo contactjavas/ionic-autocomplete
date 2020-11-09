@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-import {AutoCompleteOptions} from 'ionic4-auto-complete';
+import {AutoCompleteOptions} from 'ionic-autocomplete';
 
 import {PeopleService} from '../../services/people.service';
 import {UserModel} from '../../models/user.model';

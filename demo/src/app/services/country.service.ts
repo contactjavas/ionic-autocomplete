@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
 import {map} from 'rxjs/operators';
 
-import {AutoCompleteService} from 'ionic4-auto-complete';
+import {AutoCompleteService} from 'ionic-autocomplete';
 
 import {CountryModel} from '../models/country.model';
 

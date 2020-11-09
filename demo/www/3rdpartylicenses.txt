@@ -180,7 +180,7 @@ THE SOFTWARE.
 
 ionic-loader
 
-ionic4-auto-complete
+ionic-autocomplete
 MIT
 MIT License
 
