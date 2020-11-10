@@ -1,0 +1,41 @@
+{
+  "name": "ionic-autocomplete",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "homepage": "https://ionic-autocomplete.usefulteam.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contactjavas/ionic-autocomplete"
+  },
+  "author": {
+    "name": "Jeremy Quick",
+    "email": "me@jrquick.com",
+    "url": "https://jrquick.com"
+  },
+  "keywords": [
+    "angular",
+    "autocomplete",
+    "ionic"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contactjavas/ionic-autocomplete/issues"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "~10.0.14"
+  },
+  "main": "bundles/ionic-autocomplete.umd.js",
+  "module": "fesm2015/ionic-autocomplete.js",
+  "es2015": "fesm2015/ionic-autocomplete.js",
+  "esm2015": "esm2015/ionic-autocomplete.js",
+  "fesm2015": "fesm2015/ionic-autocomplete.js",
+  "typings": "ionic-autocomplete.d.ts",
+  "metadata": "ionic-autocomplete.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
